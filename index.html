@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEOSANTARA - Traditional Food & Modern Dining</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- CSS External -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="brand-logo-container">
+                <img src="logo.jpeg" alt="Logo Neosantara" class="brand-logo-img">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#menu">Menu & Harga</a></li>
+                <li><a href="#cabang">Cabang Kami</a></li>
+                <li><a href="#reservasi">Pesan & Reservasi</a></li>
+                <li><a href="https://www.instagram.com/neosantaragram?srtk=Zm9nMXoycjRoZHpr" target="_blank" class="ig-link">Instagram</a></li>
+            </ul>
+            <a href="#reservasi" class="btn-gold">Pesan Sekarang</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <p class="section-subtitle">Traditional Food & Modern Taste</p>
+            <h1>Kelezatan Kuliner Nusantara Harga Terjangkau</h1>
+            <p>Nikmati hidangan autentik khas Indonesia dengan bahan-bahan pilihan berkualitas tinggi namun tetap ramah di kantong.</p>
+            <a href="#menu" class="btn-gold">Lihat Menu & Harga</a>
+        </div>
+    </section>
+
+    <!-- Cabang & Kontak Section (Lengkap 6 Cabang + Google Maps) -->
+    <section id="cabang" class="section-padding" style="background-color: #fff;">
+        <div class="container">
+            <p class="section-subtitle">Jaringan Restoran</p>
+            <h2 class="section-title">Pilih Cabang Terdekat Kami</h2>
+            <p style="text-align: center; color: var(--text-muted); margin-bottom: 40px;">Klik tombol WhatsApp di bawah cabang untuk terhubung langsung dengan staf kami.</p>
+            
+            <div class="menu-grid">
+                <!-- 1. Bandung -->
+                <div class="menu-card cabang-card">
+                    <div class="menu-info">
+                        <h3 class="menu-title">Neosantara - Bandung</h3>
+                        <p class="menu-desc"><strong>Alamat:</strong> Jl. Cisangkuy No.60, Citarum, Kec. Bandung Wetan, Kota Bandung, Jawa Barat 40115</p>
+                        <div class="map-container">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.798481283627!2d107.6190!3d-6.9034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e639cfc1a5b1%3A0x808542c38865ad60!2sJl.%20Cisangkuy%20No.60!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" width="100%" height="160" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                        <button onclick="pesanSekarang(0)" class="btn-wa">Pesan via WhatsApp</button>
+                    </div>
+                </div>
+
+                <!-- 2. Bekasi Utara -->
+                <div class="menu-card cabang-card">
+                    <div class="menu-info">
+                        <h3 class="menu-title">Neosantara - Bekasi Utara</h3>
+                        <p class="menu-desc"><strong>Alamat:</strong> Jl. Bulevar Bekasi CBD, RT.001/RW.011, Marga Mulya, Kec. Bekasi Utara, Kota Bks, Jawa Barat 17143</p>
+                        <div class="map-container">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.3001!2d106.9950!3d-6.2200!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" width="100%" height="160" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                        <button onclick="pesanSekarang(1)" class="btn-wa">Pesan via WhatsApp</button>
+                    </div>
+                </div>
+
+                <!-- 3. Jakarta Selatan -->
+                <div class="menu-card cabang-card">
+                    <div class="menu-info">
+                        <h3 class="menu-title">Neosantara - Jakarta Selatan</h3>
+                        <p class="menu-desc"><strong>Alamat:</strong> Jl. Ampera Raya No.9, RT.4/RW.2, Cilandak Tim., Ps. Minggu, Kota Jakarta Selatan, DKI Jakarta 12560</p>
+                        <div class="map-container">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.8342!2d106.8200!3d-6.2800!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" width="100%" height="160" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                        <button onclick="pesanSekarang(2)" class="btn-wa">Pesan via WhatsApp</button>
+                    </div>
+                </div>
+
+                <!-- 4. Makassar -->
+                <div class="menu-card cabang-card">
+                    <div class="menu-info">
+                        <h3 class="menu-title">Neosantara - Makassar</h3>
+                        <p class="menu-desc"><strong>Alamat:</strong> Jl. Mutiara Boulevard, Bulurokeng, Biringkanaya, Kota Makassar, Sulawesi Selatan 90243</p>
+                        <div class="map-container">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.9000!2d119.5000!3d-5.0800!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" width="100%" height="160" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                        <button onclick="pesanSekarang(3)" class="btn-wa">Pesan via WhatsApp</button>
+                    </div>
+                </div>
+
+                <!-- 5. Jakarta Utara -->
+                <div class="menu-card cabang-card">
+                    <div class="menu-info">
+                        <h3 class="menu-title">Neosantara - Jakarta Utara</h3>
+                        <p class="menu-desc"><strong>Alamat:</strong> JL Yos Sudarso Lorong X No. 1 RT 009/001, Koja, Kec. Koja, Jkt Utara, DKI Jakarta 14260</p>
+                        <div class="map-container">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.8000!2d106.9000!3d-6.1200!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" width="100%" height="160" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                        <button onclick="pesanSekarang(4)" class="btn-wa">Pesan via WhatsApp</button>
+                    </div>
+                </div>
+
+                <!-- 6. Bandar Lampung -->
+                <div class="menu-card cabang-card">
+                    <div class="menu-info">
+                        <h3 class="menu-title">Neosantara - Bandar Lampung</h3>
+                        <p class="menu-desc"><strong>Alamat:</strong> Jalan Griya Utama No. 57, Way Halim Permai, Kec. Way Halim, Kota Bandar Lampung, Lampung 35135</p>
+                        <div class="map-container">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.3000!2d105.2800!3d-5.3800!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2s!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" width="100%" height="160" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                        <button onclick="pesanSekarang(5)" class="btn-wa">Pesan via WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section (Harga Ekonomis) -->
+    <section id="menu" class="section-padding">
+        <div class="container">
+            <p class="section-subtitle">Menu Pilihan</p>
+            <h2 class="section-title">Daftar Menu & Harga Terjangkau</h2>
+
+            <!-- Menu Tabs -->
+            <div class="menu-tabs">
+                <button class="tab-btn active" onclick="openMenu(event, 'makanan')">Makanan Utama</button>
+                <button class="tab-btn" onclick="openMenu(event, 'minuman')">Minuman</button>
+                <button class="tab-btn" onclick="openMenu(event, 'dessert')">Dessert</button>
+            </div>
+
+            <!-- Tab Content: Makanan -->
+            <div id="makanan" class="tab-content active">
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <img src="nasi goreng.jpg" alt="Nasi Goreng Rempah" class="menu-img">
+                        <div class="menu-info">
+                            <div class="menu-header">
+                                <h3 class="menu-title">Nasi Goreng Spesial Nusantara</h3>
+                                <span class="menu-price">Rp 15.000</span>
+                            </div>
+                            <p class="menu-desc">Nasi goreng bumbu rempah tradisional lengkap dengan telur mata sapi dan kerupuk udang.</p>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="soto betawi.jpg" alt="Nasi Soto Betawi" class="menu-img">
+                        <div class="menu-info">
+                            <div class="menu-header">
+                                <h3 class="menu-title">Nasi Soto Betawi</h3>
+                                <span class="menu-price">Rp 20.000</span>
+                            </div>
+                            <p class="menu-desc">Daging sapi empuk dengan kuah santan dan susu gurih rempah, lengkap dengan emping.</p>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="ayam bakar.jpg" alt="Ayam Bakar Madu Pejantan" class="menu-img">
+                        <div class="menu-info">
+                            <div class="menu-header">
+                                <h3 class="menu-title">Ayam Bakar Madu Pejantan</h3>
+                                <span class="menu-price">Rp 22.000</span>
+                            </div>
+                            <p class="menu-desc">Ayam pejantan empuk berbumbu rempah dengan olesan madu murni dan sambal terasi.</p>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="lele.jpg" alt="Nasi Pecel Lele Kremes" class="menu-img">
+                        <div class="menu-info">
+                            <div class="menu-header">
+                                <h3 class="menu-title">Nasi Pecel Lele Kremes</h3>
+                                <span class="menu-price">Rp 14.000</span>
+                            </div>
+                            <p class="menu-desc">Ikan lele goreng garing disajikan dengan lalapan segar, tahu, tempe, dan sambal terasi.</p>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="sate madura.jpg" alt="Sate Ayam Madura" class="menu-img">
+                        <div class="menu-info">
+                            <div class="menu-header">
+                                <h3 class="menu-title">Sate Ayam Madura</h3>
+                                <span class="menu-price">Rp 20.000</span>
+                            </div>
+                            <p class="menu-desc">Daging ayam empuk dibakar harum dengan siraman bumbu kacang gurih dan lontong.</p>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="rawon.jpg" alt="Nasi Rawon Empal" class="menu-img">
+                        <div class="menu-info">
+                            <div class="menu-header">
+                                <h3 class="menu-title">Nasi Rawon Empal</h3>
+                                <span class="menu-price">Rp 24.000</span>
+                            </div>
+                            <p class="menu-desc">Nasi hangat dengan kuah rawon kluwek gurih berpadu potongan daging empal sapi yang empuk.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab Content: Minuman -->
+            <div id="minuman" class="tab-content">
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <img src="es teh manis.jpg" alt="Es Teh Manis" class="menu-img">
+                        <div class="menu-info">
+                            <div class="menu-header">
+                                <h3 class="menu-title">Es Teh Manis Melati</h3>
+                                <span class="menu-price">Rp 5.000</span>
+                            </div>
+                            <p class="menu-desc">Teh melati pilihan disajikan dingin menyegarkan.</p>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="cendol susu.jpg" alt="Cendol Susu" class="menu-img">
+                        <div class="menu-info">
+                            <div class="menu-header">
+                                <h3 class="menu-title">Cendol Susu</h3>
+                                <span class="menu-price">Rp 12.000</span>
+                            </div>
+                            <p class="menu-desc">Cendol hijau tradisional disajikan dengan santan berkualitas, susu segar, dan gula aren.</p>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="matcha.jpg" alt="Es Matcha Latte Nusantara" class="menu-img">
+                        <div class="menu-info">
+                            <div class="menu-header">
+                                <h3 class="menu-title">Es Matcha Latte Nusantara</h3>
+                                <span class="menu-price">Rp 14.000</span>
+                            </div>
+                            <p class="menu-desc">Bubuk matcha premium berpadu dengan susu segar yang creamy dan manis pas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab Content: Dessert (PERBAIKAN: Hapus class 'active' disini agar tidak tampil bertumpuk) -->
+            <div id="dessert" class="tab-content">
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <img src="pisang ijo.jpg" alt="Es Pisang Ijo" class="menu-img">
+                        <div class="menu-info">
+                            <div class="menu-header">
+                                <h3 class="menu-title">Es Pisang Ijo Makassar</h3>
+                                <span class="menu-price">Rp 18.000</span>
+                            </div>
+                            <p class="menu-desc">Pisang manis dibalut adonan hijau lembut dengan santan gurih dan es serut.</p>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="es teler.jpg" alt="Es Teler Spesial" class="menu-img">
+                        <div class="menu-info">
+                            <div class="menu-header">
+                                <h3 class="menu-title">Es Teler Spesial</h3>
+                                <span class="menu-price">Rp 20.000</span>
+                            </div>
+                            <p class="menu-desc">Campuran buah segar alpukat, nangka, kelapa muda, dan susu dengan es serut.</p>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="es teler.jpg" alt="Es Teler Spesial" class="menu-img">
+                        <div class="menu-info">
+                            <div class="menu-header">
+                                <h3 class="menu-title">Es Teler Spesial</h3>
+                                <span class="menu-price">Rp 20.000</span>
+                            </div>
+                            <p class="menu-desc">Campuran buah segar alpukat, nangka, kelapa muda, dan susu dengan es serut.</p>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="bubur sumsum.png" alt="Bubur Sumsum" class="menu-img">
+                        <div class="menu-info">
+                            <div class="menu-header">
+                                <h3 class="menu-title">Bubur Sumsum</h3>
+                                <span class="menu-price">Rp 18.000</span>
+                            </div>
+                            <p class="menu-desc">Bubur lembut dari tepung beras dengan kuah gula merah.</p>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="klepon.png" alt="Klepon" class="menu-img">
+                        <div class="menu-info">
+                            <div class="menu-header">
+                                <h3 class="menu-title">Klepon</h3>
+                                <span class="menu-price">Rp 18.000</span>
+                            </div>
+                            <p class="menu-desc">Kue pandan berisi gula merah cair dengan taburan kelapa parut.</p>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="ketan hitam.jpg" alt="Bubur Ketan Hitam Es Krim" class="menu-img">
+                        <div class="menu-info">
+                            <div class="menu-header">
+                                <h3 class="menu-title">Bubur Ketan Hitam Es Krim</h3>
+                                <span class="menu-price">Rp 17.000</span>
+                            </div>
+                            <p class="menu-desc">Campuran buah segar alpukat, nangka, kelapa muda, dan susu dengan es serut.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservasi & Pemesanan Section -->
+    <section id="reservasi" class="section-padding reservation">
+        <div class="container">
+            <p class="section-subtitle">Formulir Pemesanan & Reservasi</p>
+            <h2 class="section-title">Pesan Menu / Meja Sekarang</h2>
+
+            <div class="form-container">
+                <form id="bookingForm" onsubmit="handleReservation(event)">
+                    <div class="form-group">
+                        <label for="cabangPilihan">Pilih Cabang Tujuan</label>
+                            </div>
+                            <p class="menu-desc">Campuran buah segar alpukat, nangka, kelapa muda, dan susu dengan es serut.</p>
+                        </div>
+                    </div>  </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <img src="ketan hitam.jpg" alt="Bubur Ketan Hitam Es Krim" class="menu-img">
+                        <div class="menu-info">
+                            <div class="menu-header">
+                                <h3 class="menu-title">Bubur Ketan Hitam Es Krim</h3>
+                                <span class="menu-price">Rp 17.000</span>
+                            </div>
+                            <p class="menu-desc">Bubur ketan hitam legit hangat disajikan unik dengan es krim vanila dingin.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservasi & Pemesanan Section -->
+    <section id="reservasi" class="section-padding reservation">
+        <div class="container">
+            <p class="section-subtitle">Formulir Pemesanan & Reservasi</p>
+            <h2 class="section-title">Pesan Menu / Meja Sekarang</h2>
+            
+            <div class="form-container">
+                <form id="bookingForm" onsubmit="handleReservation(event)">
+                    <div class="form-group">
+                        <label for="cabangPilihan">Pilih Cabang Tujuan</label>
+                        <select id="cabangPilihan" class="form-control" required>
+                            <option value="0">Neosantara - Bandung (Cisangkuy)</option>
+                            <option value="1">Neosantara - Bekasi Utara (Summarecon/CBD)</option>
+                            <option value="2">Neosantara - Jakarta Selatan (Ampera)</option>
+                            <option value="3">Neosantara - Makassar (Biringkanaya)</option>
+                            <option value="4">Neosantara - Jakarta Utara (Koja)</option>
+                            <option value="5">Neosantara - Bandar Lampung (Way Halim)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nama">Nama Lengkap</label>
+                        <input type="text" id="nama" class="form-control" placeholder="Nama Anda" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="pesanan">Menu yang Dipesan / Catatan Meja</label>
+                            <input type="text" id="pesanan" class="form-control" placeholder="Contoh: 2 Nasi Goreng, 2 Es Teh" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="jumlah">Jumlah Orang / Meja</label>
+                            <input type="number" id="jumlah" class="form-control" placeholder="Contoh: 2" min="1" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="tanggal">Tanggal</label>
+                            <input type="date" id="tanggal" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="jam">Jam Kunjungan / Antar</label>
+                            <input type="time" id="jam" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pembayaran">Metode Pembayaran</label>
+                        <select id="pembayaran" class="form-control" required>
+                            <option value="Bayar di Tempat (Tunai)">Bayar di Tempat (Tunai)</option>
+                            <option value="Transfer Bank (BCA/Mandiri)">Transfer Bank</option>
+                            <option value="QRIS (Scan Barcode)">QRIS</option>
+                            <option value="E-Wallet (GoPay/OVO/Dana)">E-Wallet (GoPay / OVO / Dana)</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn-gold" style="width: 100%; margin-top: 10px;">Kirim Pesanan ke WhatsApp Cabang</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer & Contact -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>NEOSANTARA</h4>
+                    <p>Traditional Food berkonsep modern luxury dengan harga yang bersahabat untuk semua kalangan.</p>
+                    <p style="margin-top: 10px;">Instagram: <a href="https://www.instagram.com/neosantaragram?srtk=Zm9nMXoycjRoZHpr" target="_blank" style="color: var(--accent-gold);">@neosantaragram</a></p>
+                </div>
+                <div class="footer-col">
+                    <h4>Jam Operasional</h4>
+                    <p>Setiap Hari: 10:00 - 22:00 WIB</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Layanan Pelanggan</h4>
+                    <p>Pusat bantuan pemesanan online via WhatsApp aktif 24 Jam di masing-masing nomor cabang.</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2026 NEOSANTARA Traditional Food. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Widget -->
+    <a href="https://wa.me/62895403299384?text=Halo%20Admin%20NEOSANTARA,%20saya%20ingin%20bertanya%20mengenai..." target="_blank" class="wa-float">
+        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+        Chat WhatsApp
+    </a>
+
+    <!-- JavaScript External -->
+    <script src="script.js"></script>
+</body>
+</html>
