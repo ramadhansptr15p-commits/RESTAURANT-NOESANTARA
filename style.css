@@ -98,11 +98,12 @@ header {
 
 .brand-logo-img {
     height: 50px;
-    width: auto;
+    width: 50px;
     object-fit: contain;
     background-color: #fff;
-    padding: 4px;
-    border-radius: 4px;
+    padding: 3px;
+    border-radius: 50%;
+    border: 2px solid var(--accent-gold);
 }
 
 .nav-links {
@@ -400,8 +401,35 @@ footer {
     background-color: #1eb956;
 }
 
+/* =========================================
+   PERBAIKAN UTAMA AGAR RAPI DI HP (1 KOLOM)
+   ========================================= */
 @media (max-width: 768px) {
-    .hero-content h1 { font-size: 2.2rem; }
-    .nav-links { display: none; }
-    .form-row { grid-template-columns: 1fr; }
+    /* Sembunyikan menu teks atas agar header tidak penuh dan sesak */
+    .nav-links {
+        display: none !important;
+    }
+
+    /* Paksa semua grid (menu, cabang, footer, form) jadi 1 kolom ke bawah */
+    .menu-grid,
+    .footer-grid,
+    .form-row {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+    }
+
+    /* Pastikan lebar kartu menu pas mengikuti layar HP */
+    .menu-card {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    /* Sesuaikan ukuran judul agar tidak terlalu besar di HP */
+    .hero-content h1 {
+        font-size: 2rem !important;
+    }
+
+    .section-title {
+        font-size: 1.6rem !important;
+    }
 }
